@@ -9,7 +9,7 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   output: "static",
   adapter: netlify(),
-  integrations: [react(),netlify()],
+  integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
   },
