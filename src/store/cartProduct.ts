@@ -11,7 +11,6 @@ export const useCart = create((set) => ({
   updateCart: (id: any, quantity: any) =>
     set((state: any) => ({
       cart: state.cart.map((product: any) => {
-        console.log("QQQ", quantity);
         return product.id === id ? { ...product, quantity } : product;
       }),
     })),
