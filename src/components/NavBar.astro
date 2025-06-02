@@ -34,7 +34,7 @@ import ListCart from "./react/ListCart"
 
 
 <!-- drawer component -->
-<div id="drawer-right-example" class="fixed md:w-[50%] top-0 right-0 z-9999 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white  dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
+<div id="drawer-right-example" class="fixed w-full top-0 right-0 z-9999 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white  dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
    
  <div class="py-2 mb-6">
    <h5 class="text-2xl  text-gray-300 text-center p-2 border-b space-y-2 border-gray-500">Mi carrito</h5>
@@ -52,4 +52,18 @@ import ListCart from "./react/ListCart"
 
 
 
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const drawer = document.getElementById('drawer-right-example');
+
+    document.addEventListener('click', function (event) {
+     
+      // Si el drawer está abierto y se hace clic fuera de él
+      if (!isClickInside && isDrawerOpen) {
+        // Aplica las clases para ocultarlo (simula el data-drawer-hide)
+        drawer.classList.add('translate-x-full');
+      }
+    });
+  });
+</script>
  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> 
