@@ -5,7 +5,21 @@ import { FaTrash, FaWhatsapp } from "react-icons/fa";
 const ListCart = () => {
   const { cart, updateCart, deleteCart } = useCart();
 
-  const total = cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
+  const total = cart.reduce(
+    (acc, product) => acc + product.price * product.quantity,
+    0
+  );
+
+  const addWhatsapp = () => {
+    const message = encodeURIComponent(
+      `Hola, quiero comprar estos productos: ${cart
+        .map((product) => `${product.title} - Cantidad: ${product.quantity}`)
+        .join("\n")}`
+    );
+
+    const url = `https://api.whatsapp.com/send?phone=+593999533414&text=${message}`;
+    window.open(url, "_blank");
+  };
 
   return (
     <React.Fragment>
@@ -30,7 +44,12 @@ const ListCart = () => {
 
               <div className="flex flex-col gap-4 justify-center items-center">
                 <div>
-                  <FaTrash onClick={() => deleteCart(product.id)} className=" cursor-pointer" color="red" size={20} />
+                  <FaTrash
+                    onClick={() => deleteCart(product.id)}
+                    className=" cursor-pointer"
+                    color="red"
+                    size={20}
+                  />
                 </div>
 
                 <div className="flex gap-4">
@@ -62,7 +81,10 @@ const ListCart = () => {
 
         <div className="w-full">
           <h3 className="text-gray-400">Total: ${total.toFixed(2)}</h3>
-          <button className="flex w-full justify-center items-center gap-4 text-xl text-white  bg-green-500  px-6 rounded-2xl py-2 cursor-pointer">
+          <button
+            onClick={addWhatsapp}
+            className="flex w-full justify-center items-center gap-4 text-xl text-white  bg-green-500  px-6 rounded-2xl py-2 cursor-pointer"
+          >
             Pedir por Whatsapp
             <FaWhatsapp size={20} />
           </button>
