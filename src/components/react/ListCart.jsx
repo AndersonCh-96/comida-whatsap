@@ -79,16 +79,18 @@ const ListCart = () => {
           <p className="text-gray-400">No hay productos en el carrito</p>
         )}
 
-        <div className="w-full">
-          <h3 className="text-gray-400">Total: ${total.toFixed(2)}</h3>
-          <button
-            onClick={addWhatsapp}
-            className="flex w-full justify-center items-center gap-4 text-xl text-white  bg-green-500  px-6 rounded-2xl py-2 cursor-pointer"
-          >
-            Pedir por Whatsapp
-            <FaWhatsapp size={20} />
-          </button>
-        </div>
+        {cart.length > 0 && (
+          <div className="w-full">
+            <h3 className="text-gray-400">Total: ${total.toFixed(2)}</h3>
+            <button
+              onClick={addWhatsapp}
+              className="flex w-full justify-center items-center gap-4 text-xl text-white  bg-green-500  px-6 rounded-2xl py-2 cursor-pointer"
+            >
+              Pedir por Whatsapp
+              <FaWhatsapp size={20} />
+            </button>
+          </div>
+        )}
       </ul>
     </React.Fragment>
   );
