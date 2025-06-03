@@ -27,19 +27,19 @@ const ListCart = () => {
         {cart.length > 0 ? (
           cart.map((product) => (
             <div
-              className="flex gap-6 rounded-xl py-2 shadow-2xl   justify-around"
+              className="flex gap-6 rounded-xl py-2 bg-white shadow-2xl justify-around"
               key={product.id}
             >
               <img
                 className="size-16 rounded-2xl bg-white shadow-2xl"
-                src={product.image}
-                alt={product.title}
+                src={product.imagen}
+                alt={product.nombre}
               />
               <div className="flex flex-col text-sm text-gray-400">
                 <h5 className="text-ellipsis overflow-hidden whitespace-nowrap  max-w-40">
-                  {product.title}
+                  {product.nombre}
                 </h5>
-                <p>${product.price}</p>
+                <p>${product.precio}</p>
               </div>
 
               <div className="flex flex-col gap-4 justify-center items-center">

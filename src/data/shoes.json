@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Zapatillas deportivas niño",
+    "descripcion": "Zapatillas ligeras para uso diario con suela antideslizante.",
+    "precio": 24.99,
+    "categoria": "niño",
+    "tallasDisponibles": [28, 29, 30, 31, 32],
+    "imagen": "https://images.unsplash.com/photo-1742390671619-5d4f2433e10a?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "nombre": "Botines escolares niño",
+    "descripcion": "Botines resistentes ideales para el colegio.",
+    "precio": 29.99,
+    "categoria": "niño",
+    "tallasDisponibles": [27, 28, 29, 30],
+    "imagen": "https://images.unsplash.com/photo-1742390671604-298585775fe9?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "nombre": "Sandalias de verano niño",
+    "descripcion": "Sandalias frescas para actividades al aire libre.",
+    "precio": 19.99,
+    "categoria": "niño",
+    "tallasDisponibles": [26, 27, 28],
+    "imagen": "https://images.unsplash.com/photo-1608614602027-6644c08e6921?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "nombre": "Zapatillas con luces niña",
+    "descripcion": "Zapatillas llamativas con luces LED integradas.",
+    "precio": 27.99,
+    "categoria": "niña",
+    "tallasDisponibles": [26, 27, 28, 29],
+    "imagen": "https://plus.unsplash.com/premium_photo-1669644856868-6613f6683346?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 5,
+    "nombre": "Botines de invierno niña",
+    "descripcion": "Botines acolchados para mantener el calor en invierno.",
+    "precio": 32.99,
+    "categoria": "niña",
+    "tallasDisponibles": [27, 28, 29, 30],
+    "imagen": "https://images.unsplash.com/photo-1718705889811-5bc6348f0c39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "nombre": "Sandalias florales niña",
+    "descripcion": "Diseño floral ideal para primavera y verano.",
+    "precio": 21.99,
+    "categoria": "niña",
+    "tallasDisponibles": [25, 26, 27],
+    "imagen": "https://images.unsplash.com/photo-1623739651768-226a8c7ed444?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 7,
+    "nombre": "Zapatillas running mujer",
+    "descripcion": "Calzado deportivo con diseño moderno y cómodo.",
+    "precio": 49.99,
+    "categoria": "mujer",
+    "tallasDisponibles": [36, 37, 38, 39, 40],
+    "imagen": "https://images.unsplash.com/photo-1602593330926-30c90a271fa5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 8,
+    "nombre": "Botines de cuero mujer",
+    "descripcion": "Elegantes botines para combinar con cualquier look.",
+    "precio": 59.99,
+    "categoria": "mujer",
+    "tallasDisponibles": [36, 37, 38, 39],
+    "imagen": "https://images.unsplash.com/photo-1524635620932-ae4f58f5f3c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 9,
+    "nombre": "Sandalias planas mujer",
+    "descripcion": "Comodidad y frescura para días soleados.",
+    "precio": 34.99,
+    "categoria": "mujer",
+    "tallasDisponibles": [35, 36, 37, 38],
+    "imagen": "https://images.unsplash.com/photo-1566499003412-4736d6099504?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 10,
+    "nombre": "Zapatillas urbanas hombre",
+    "descripcion": "Estilo urbano para uso diario.",
+    "precio": 44.99,
+    "categoria": "hombre",
+    "tallasDisponibles": [40, 41, 42, 43, 44],
+    "imagen": "https://images.unsplash.com/photo-1602092298301-5b2adccf264d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 11,
+    "nombre": "Zapatos de vestir hombre",
+    "descripcion": "Elegantes zapatos formales para eventos o trabajo.",
+    "precio": 64.99,
+    "categoria": "hombre",
+    "tallasDisponibles": [40, 41, 42, 43],
+    "imagen": "https://images.unsplash.com/photo-1588433963378-82d7b8fc1552?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 12,
+    "nombre": "Sandalias deportivas hombre",
+    "descripcion": "Diseñadas para caminar con comodidad.",
+    "precio": 38.99,
+    "categoria": "hombre",
+    "tallasDisponibles": [41, 42, 43],
+    "imagen": "https://plus.unsplash.com/premium_photo-1721385340418-0e54a907da11?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
