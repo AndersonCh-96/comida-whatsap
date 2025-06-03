@@ -74,15 +74,17 @@ export default function SwiperCarousel({ products, addProduct }) {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="w-full">
-            <div className="bg-white  py-3 shadow-2xl rounded-2xl hover:scale-110 transition-transform ">
+            <div className="bg-white min-h-[280px]  py-3 shadow-2xl mx-2 mt-6 rounded-2xl hover:scale-110 transition-transform ">
               <img
                 src={product.image}
                 alt={product.title}
                 className="size-40 object-contain"
               />
-              <h3 className="mt-2 text-center">{product.title}</h3>
+              <h3 className="mt-2 mb-3 text-center text-sm  text-gray-500">
+                {product.title}
+              </h3>
 
-              <div className="flex justify-center">
+              <div className="flex justify-center mx-4">
                 {/* <button
                   onClick={() => addProduct(product)}
                   className="bg-green-500 cursor-pointer text-white px-6 rounded-2xl py-2 text-center"
@@ -97,7 +99,7 @@ export default function SwiperCarousel({ products, addProduct }) {
                   }}
                   data-modal-target="react-modal"
                   data-modal-toggle="react-modal"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-2xl cursor-pointer"
+                  className="bg-blue-500 w-full text-white px-4 py-2 rounded-2xl cursor-pointer"
                 >
                   Agregar
                 </button>
@@ -116,7 +118,7 @@ export default function SwiperCarousel({ products, addProduct }) {
         <div className="relative p-4 w-full max-w-3xl mx-auto my-8 transition-transform">
           <div className="bg-white flex flex-col justify-between rounded-lg shadow p-6  ">
             <div className="flex justify-between">
-              <h3 className="text-xl font-bold mb-4 line-clamp-2 w-full ">
+              <h3 className="text-xl font-bold mb-4 line-clamp-2 w-full border-b-1 border-gray-400  mx-8">
                 {product?.title}
               </h3>
 
