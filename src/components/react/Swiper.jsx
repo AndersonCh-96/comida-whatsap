@@ -111,7 +111,7 @@ export default function SwiperCarousel({ products, addProduct }) {
         id="react-modal"
         aria-hidden="true"
         tabIndex="-1"
-        className="hidden fixed inset-0 z-50 overflow-y-auto "
+        className="hidden fixed inset-0 z-90 overflow-y-auto  "
       >
         <div className="relative p-4 w-full max-w-3xl mx-auto my-8 transition-transform">
           <div className="bg-white flex flex-col justify-between rounded-lg shadow p-6  ">
