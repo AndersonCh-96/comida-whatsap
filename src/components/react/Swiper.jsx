@@ -74,7 +74,7 @@ export default function SwiperCarousel({ products, addProduct }) {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="w-full">
-            <div className="bg-white min-h-[280px]  py-3 shadow-2xl mx-2 mt-6 rounded-2xl hover:scale-110 transition-transform ">
+            <div className="bg-white min-h-[280px]  shadow-2xl  mt-6 rounded-2xl hover:scale-110 transition-transform ">
               <img
                 src={product.image}
                 alt={product.title}
