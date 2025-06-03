@@ -51,19 +51,4 @@ import ListCart from "./react/ListCart"
 </div>
 
 
-
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const drawer = document.getElementById('drawer-right-example');
-
-    document.addEventListener('click', function (event) {
-     
-      // Si el drawer está abierto y se hace clic fuera de él
-      if (!isClickInside && isDrawerOpen) {
-        // Aplica las clases para ocultarlo (simula el data-drawer-hide)
-        drawer.classList.add('translate-x-full');
-      }
-    });
-  });
-</script>
  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> 
