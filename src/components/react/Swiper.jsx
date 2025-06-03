@@ -15,6 +15,7 @@ import "./styles.css";
 import { useCart } from "../../store/cartProduct";
 import toast from "react-hot-toast";
 import { FreeMode, Pagination } from "swiper/modules";
+import { FaPlus } from "react-icons/fa";
 
 export default function SwiperCarousel({ products, addProduct }) {
   const [product, setProduct] = useState({});
@@ -168,9 +169,10 @@ export default function SwiperCarousel({ products, addProduct }) {
                 onClick={() => {
                   handleAddToCart(product);
                 }}
-                className="bg-green-500 cursor-pointer text-white px-6 rounded-2xl py-2 text-center"
+                className="bg-green-500 flex items-center gap-2 cursor-pointer text-white px-6 rounded-2xl py-2 text-center"
               >
-                Agregar
+                Añadir al carrito
+                <FaPlus size={14}/>
               </button>
             </div>
           </div>
