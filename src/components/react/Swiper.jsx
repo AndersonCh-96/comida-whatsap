@@ -169,10 +169,10 @@ export default function SwiperCarousel({ products, addProduct }) {
                 onClick={() => {
                   handleAddToCart(product);
                 }}
-                className="bg-green-500 flex items-center gap-2 cursor-pointer text-white px-6 rounded-2xl py-2 text-center"
+                className="bg-green-500 flex items-center gap-2 cursor-pointer text-white px-2 md:px-6 rounded-2xl py-2 text-center"
               >
                 Añadir al carrito
-                <FaPlus size={14}/>
+                <FaPlus size={14} />
               </button>
             </div>
           </div>
