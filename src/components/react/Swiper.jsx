@@ -49,17 +49,31 @@ export default function SwiperCarousel({ products, addProduct }) {
   return (
     <div>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         spaceBetween={30}
         freeMode={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
         // pagination={{
         //   clickable: true,
         // }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
+        className="mySwiper w-full"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id} className="">
+          <SwiperSlide key={product.id} className="w-full">
             <div className="bg-white  py-3 shadow-2xl rounded-2xl hover:scale-110 transition-transform ">
               <img
                 src={product.image}
@@ -159,6 +173,3 @@ export default function SwiperCarousel({ products, addProduct }) {
     </div>
   );
 }
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
