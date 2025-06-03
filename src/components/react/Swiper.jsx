@@ -129,7 +129,7 @@ export default function SwiperCarousel({ products, addProduct }) {
                 X
               </button>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
               <div>
                 <img
                   src={product?.image}
@@ -138,8 +138,12 @@ export default function SwiperCarousel({ products, addProduct }) {
                 />
               </div>
               <div className="flex flex-col">
-                <p>{product?.description}</p>
-                <p>${product?.price}</p>
+                <p className="text-sm lg:text-md text-gray-600  ">
+                  {product?.description}
+                </p>
+                <p className="bg-amber-400 w-20 rounded-2xl px-2">
+                  ${product?.price}
+                </p>
               </div>
             </div>
 
