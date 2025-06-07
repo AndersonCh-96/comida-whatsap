@@ -13,7 +13,7 @@ const ListCart = () => {
   const addWhatsapp = () => {
     const message = encodeURIComponent(
       `Hola, quiero comprar estos productos: ${cart
-        .map((product) => `${product.title} - Cantidad: ${product.quantity}`)
+        .map((product) => `${product.name} - Cantidad: ${product.quantity}`)
         .join("\n")}`
     );
 
