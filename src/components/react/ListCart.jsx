@@ -27,19 +27,19 @@ const ListCart = () => {
         {cart.length > 0 ? (
           cart.map((product) => (
             <div
-              className="flex gap-6 rounded-xl py-2 bg-white shadow-2xl justify-around"
+              className="flex gap-6 rounded-xl py-2 bg-white shadow-2xl justify-evenly items-center"
               key={product.id}
             >
               <img
-                className="size-16 rounded-2xl bg-white shadow-2xl"
-                src={product.imagen}
-                alt={product.nombre}
+                className="size-20 rounded-2xl bg-white shadow-2xl"
+                src={product.image}
+                alt={product.name}
               />
-              <div className="flex flex-col text-sm text-gray-400">
-                <h5 className="text-ellipsis overflow-hidden whitespace-nowrap  max-w-40">
-                  {product.nombre}
-                </h5>
-                <p>${product.precio}</p>
+              <div className="flex flex-col text-lg text-gray-600">
+                <h2 className=" max-w-100">
+                  {product.name}
+                </h2>
+                <p>${product.price}</p>
               </div>
 
               <div className="flex flex-col gap-4 justify-center items-center">
@@ -58,16 +58,16 @@ const ListCart = () => {
                       onClick={() =>
                         updateCart(product.id, product.quantity - 1)
                       }
-                      className="bg-blue-500 px-2 rounded-2xl text-gray-400 text-lg cursor-pointer"
+                      className="bg-blue-500 px-4 rounded-2xl text-white text-lg hover:bg-blue-600 cursor-pointer"
                     >
                       -
                     </button>
                   )}
-                  <p className="text-gray-400 text-lg">{product.quantity}</p>
+                  <p className="text-gray-600 text-lg">{product.quantity}</p>
 
                   <button
                     onClick={() => updateCart(product.id, product.quantity + 1)}
-                    className="bg-blue-500 px-2 rounded-2xl text-gray-400 text-lg cursor-pointer"
+                    className="bg-blue-500  px-4 rounded-2xl text-white hover:bg-blue-600 text-lg cursor-pointer"
                   >
                     +
                   </button>
@@ -81,10 +81,10 @@ const ListCart = () => {
 
         {cart.length > 0 && (
           <div className="w-full">
-            <h3 className="text-gray-400">Total: ${total.toFixed(2)}</h3>
+            <h3 className="text-gray-600 text-lg mb-4">Total: ${total.toFixed(2)}</h3>
             <button
               onClick={addWhatsapp}
-              className="flex w-full justify-center items-center gap-4 text-xl text-white  bg-green-500  px-6 rounded-2xl py-2 cursor-pointer"
+              className="flex w-full justify-center items-center gap-4  text-xl text-white  bg-green-500  px-6 rounded-2xl py-5 cursor-pointer"
             >
               Pedir por Whatsapp
               <FaWhatsapp size={20} />

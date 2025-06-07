@@ -25,10 +25,6 @@ export default function SwiperCarousel({ products, addProduct }) {
 
   const { cart } = useCart();
 
-  // useEffect(() => {
-  //   import("flowbite").then(({ initFlowbite }) => initFlowbite());
-  // }, []);
-
   const incrementQuantity = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
@@ -47,6 +43,7 @@ export default function SwiperCarousel({ products, addProduct }) {
     }
 
     addProduct({ ...product, quantity });
+    setIsModalOpen(false);
   };
 
   return (
@@ -79,15 +76,15 @@ export default function SwiperCarousel({ products, addProduct }) {
           <SwiperSlide key={product.id} className="w-full">
             <div className=" min-h-[280px] bg-white shadow-xl  mt-6 rounded-2xl hover:scale-110 transition-transform ">
               <img
-                src={product.imagen}
-                alt={product.nombre}
-                className="size-40 object-contain"
+                src={product.image}
+                alt={product.nome}
+                className="size-40 object-contain rounded-4xl"
               />
               <h3 className="mt-2 mb-3 text-center text-sm  text-gray-500">
-                {product.nombre}
+                {product.name}
               </h3>
               <p className="text-center text-sm text-gray-500 mb-2">
-                ${product.precio}
+                ${product.price}
               </p>
 
               <div className="flex justify-center mx-4">
@@ -116,11 +113,11 @@ export default function SwiperCarousel({ products, addProduct }) {
           // className="hidden fixed inset-0 z-90 overflow-y-auto  "
           className=" fixed inset-0 z-90 overflow-y-auto  bg-black/70 flex justify-center"
         >
-          <div className="relative p-4 w-full max-w-3xl mx-auto my-8 transition-transform justify-center items-center place-content-center">
+          <div className="relative p-4 w-full max-w-4xl mx-auto my-8 transition-transform justify-center items-center place-content-center">
             <div className="bg-white flex flex-col justify-between rounded-lg shadow p-6  ">
               <div className="flex justify-between">
                 <h3 className="text-xl font-bold mb-4 line-clamp-2 w-full border-b-1 border-gray-400  mx-8">
-                  {product?.nombre}
+                  {product?.name}
                 </h3>
 
                 <button
@@ -130,50 +127,50 @@ export default function SwiperCarousel({ products, addProduct }) {
                   X
                 </button>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 ">
+                <div className="bg-white shadow-2xl rounded-2xl">
                   <img
-                    src={product?.imagen}
-                    alt={product?.nombre}
-                    className="w-full h-48 object-contain justify-center items-center place-content-center rounded-lg"
+                    src={product?.image}
+                    alt={product?.name}
+                    className="w-full rounded-2xl h-70 hover:scale-110 cursor-pointer object-contain justify-center items-center place-content-center"
                   />
                 </div>
-                <div className="flex flex-col">
-                  <p className="text-sm lg:text-md text-gray-600  ">
-                    {product?.descripcion}
+                <div className="flex flex-col justify-between pl-4">
+                  <p className="text-sm mt-4 md:mt-0 lg:text-md text-gray-600  ">
+                    {product?.description}
                   </p>
-                  <p className="bg-amber-400 w-20 rounded-2xl px-2">
-                    ${product?.precio}
+                  <p className="bg-amber-400 w-20 rounded-2xl px-2 py-1 text-white font-bold text-center">
+                    ${product?.price}
                   </p>
-                </div>
-              </div>
 
-              <div className="flex justify-between ">
-                <div className="flex gap-6 justify-center items-center">
-                  <button
-                    onClick={decrementQuantity}
-                    className="bg-blue-700 text-white  text-lg px-4 py-1 rounded cursor-pointer"
-                  >
-                    -
-                  </button>
-                  <p>{quantity}</p>
-                  <button
-                    onClick={incrementQuantity}
-                    className="bg-blue-700 text-white text-lg  px-4 py-1 rounded cursor-pointer"
-                  >
-                    +
-                  </button>
+                  <div className="flex justify-end gap-5 mt-6 ">
+                    <div className="flex gap-6 justify-center items-center">
+                      <button
+                        onClick={decrementQuantity}
+                        className="bg-blue-700 text-white  text-lg px-4 py-1 rounded cursor-pointer"
+                      >
+                        -
+                      </button>
+                      <p>{quantity}</p>
+                      <button
+                        onClick={incrementQuantity}
+                        className="bg-blue-700 text-white text-lg  px-4 py-1 rounded cursor-pointer"
+                      >
+                        +
+                      </button>
+                    </div>
+                    <button
+                      data-modal-hide="react-modal"
+                      onClick={() => {
+                        handleAddToCart(product);
+                      }}
+                      className="bg-green-500 flex items-center gap-2 cursor-pointer text-white px-2 md:px-6 rounded-2xl py-2 text-center"
+                    >
+                      Añadir al carrito
+                      <FaPlus size={14} />
+                    </button>
+                  </div>
                 </div>
-                <button
-                  data-modal-hide="react-modal"
-                  onClick={() => {
-                    handleAddToCart(product);
-                  }}
-                  className="bg-green-500 flex items-center gap-2 cursor-pointer text-white px-2 md:px-6 rounded-2xl py-2 text-center"
-                >
-                  Añadir al carrito
-                  <FaPlus size={14} />
-                </button>
               </div>
             </div>
           </div>

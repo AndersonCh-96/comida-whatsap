@@ -1,6 +1,6 @@
 import axios from "axios";
 import { create } from "zustand";
-import shoes from "../data/shoes.json";
+import products from "../data/products.json";
 
 export const useProduct = create((set) => ({
   products: [],
@@ -9,7 +9,7 @@ export const useProduct = create((set) => ({
   getProducts: async () => {
     set({ loading: true, error: null });
 
-    set({ products: shoes, loading: false });
+    set({ products: products, loading: false });
 
     // try {
     //   const res = await axios

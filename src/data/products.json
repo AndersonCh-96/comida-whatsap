@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Combo Clásico",
+    "price": 9,
+    "image": "https://images.unsplash.com/photo-1512152272829-e3139592d56f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "combo",
+    "description": "Hamburguesa clásica + papas + bebida"
+  },
+  {
+    "id": 2,
+    "name": "Combo Doble",
+    "price": 12,
+    "image": "https://media.istockphoto.com/id/520134277/photo/take-out-food-classic-cheeseburger-meal-isolated-on-white.jpg?s=2048x2048&w=is&k=20&c=6LLHz421ujWvDViHZIAapBqWZtuDXFxynrEhl1sBK2o=",
+    "category": "combo",
+    "description": "Doble hamburguesa + papas grandes + bebida"
+  },
+  {
+    "id": 3,
+    "name": "Combo Nuggets",
+    "price": 8,
+    "image": "https://media.istockphoto.com/id/1360174701/photo/chicken-nuggets-and-ketchup-from-above-on-white-plate.jpg?s=2048x2048&w=is&k=20&c=n7blKlZTl3UuoUz9Gi_Qu2K_xkDcg13_4nBFuQYy3Yc=",
+    "category": "combo",
+    "description": "6 Nuggets + papas medianas + bebida"
+  },
+  {
+    "id": 4,
+    "name": "Combo Kids",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1598977231174-67161d25ddc0?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "combo",
+    "description": "Mini hamburguesa + jugo + juguete sorpresa"
+  },
+  {
+    "id": 5,
+    "name": "Hamburguesa Sencilla",
+    "price": 5,
+    "image": "https://media.istockphoto.com/id/155352091/photo/plain-hamburger.jpg?s=2048x2048&w=is&k=20&c=bxMYm3lbZXjAma-FiqUJHPtWeFHjFgZDgRmmmQoPrzM=",
+    "category": "individual",
+    "description": "Pan, carne, lechuga, tomate, queso"
+  },
+  {
+    "id": 6,
+    "name": "Papas Fritas",
+    "price": 3,
+    "image": "https://media.istockphoto.com/id/2167828446/photo/portion-of-fried-rustic-potatoes.jpg?s=2048x2048&w=is&k=20&c=n13nLWOgwdM-n2ELAWlvKGUQxXtkZABCj3E9O488sCs=",
+    "category": "individual",
+    "description": "Papas doradas con sal"
+  },
+  {
+    "id": 7,
+    "name": "Nuggets de Pollo (6)",
+    "price": 4,
+    "image": "https://media.istockphoto.com/id/618209540/photo/basket-of-chicken-nuggets-with-sweet-and-sour-sauce.jpg?s=2048x2048&w=is&k=20&c=F1A66rFzfrKat2xakoWMTehRuHrfrMlFYrpgcUECd7E=",
+    "category": "individual",
+    "description": "6 unidades de nuggets crujientes"
+  },
+  {
+    "id": 8,
+    "name": "Hot Dog",
+    "price": 4,
+    "image": "https://media.istockphoto.com/id/1776523875/photo/street-food-elegance-street-food-hot-dog-brunch.jpg?s=2048x2048&w=is&k=20&c=CDyFd4cQkGs5Dd2Nun0pt9rFhi2D9MVKOwFn5YTGHNg=",
+    "category": "individual",
+    "description": "Pan suave, salchicha, salsas y papitas"
+  },
+  {
+    "id": 9,
+    "name": "Refresco Cola 500ml",
+    "price": 2,
+    "image": "https://media.istockphoto.com/id/157726102/photo/classical-coca-cola-bottle.jpg?s=2048x2048&w=is&k=20&c=VDG7Fm7z45yjSm-a8u1TdN_8rDJJY_pXBYpyDYBCQzQ=",
+    "category": "bebida",
+    "description": "Bebida gaseosa clásica"
+  },
+  {
+    "id": 10,
+    "name": "Limonada Natural",
+    "price": 2.5,
+    "image": "https://images.unsplash.com/photo-1623084921164-4a8c5c37a912?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "bebida",
+    "description": "Refrescante limonada recién hecha"
+  },
+  {
+    "id": 11,
+    "name": "Jugo de Naranja",
+    "price": 2.5,
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "bebida",
+    "description": "Jugo natural exprimido"
+  },
+  {
+    "id": 12,
+    "name": "Agua Mineral",
+    "price": 1.5,
+    "image": "https://media.istockphoto.com/id/1302149011/photo/detox.jpg?s=2048x2048&w=is&k=20&c=XMp_UnQtQIRndUSt1F72f4byMf5VqFAZUtbhIjI61LI=",
+    "category": "bebida",
+    "description": "Agua fría con gas"
+  }
+]
