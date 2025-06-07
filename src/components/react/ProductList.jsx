@@ -77,17 +77,17 @@ const ProductList = () => {
           </div>
         </div>
 
-        <div className="max-w-[1500px] w-full  mx-auto "ref={comboRef}>
+        <div className="max-w-[1500px] w-full  mx-auto " ref={comboRef}>
           <SwiperCarousel addProduct={addProduct} products={products} />
         </div>
 
-        <div className="max-w-[1500px] w-full  mx-auto "  ref={individualRef}>
+        <div className="max-w-[1500px] w-full  mx-auto " ref={individualRef}>
           <div className="bg-amber-400 text-white text-2xl font-bold py-2 px-4">
             {" "}
-            <h1 >COMBOS</h1>
+            <h1>COMBOS</h1>
           </div>
 
-          <div >
+          <div>
             <SwiperCarousel
               addProduct={addProduct}
               products={products.filter((item) => item.category == "combo")}
@@ -100,7 +100,7 @@ const ProductList = () => {
             {" "}
             <h1>INDIVIDUAL</h1>
           </div>
-          <div >
+          <div>
             <SwiperCarousel
               addProduct={addProduct}
               products={products.filter(
