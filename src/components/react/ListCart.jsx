@@ -12,9 +12,9 @@ const ListCart = () => {
 
   const addWhatsapp = () => {
     const message = encodeURIComponent(
-      `Hola, quiero comprar estos productos: ${cart
+      `Hola, quiero comprar estos productos:\n${cart
         .map((product) => `${product.name} - Cantidad: ${product.quantity}`)
-        .join("\n")}`
+        .join("\n")}\n\nTotal: $${total.toFixed(2)}`
     );
 
     const url = `https://api.whatsapp.com/send?phone=+593999533414&text=${message}`;
@@ -36,9 +36,7 @@ const ListCart = () => {
                 alt={product.name}
               />
               <div className="flex flex-col text-lg text-gray-600">
-                <h2 className=" max-w-100">
-                  {product.name}
-                </h2>
+                <h2 className=" max-w-100">{product.name}</h2>
                 <p>${product.price}</p>
               </div>
 
@@ -81,7 +79,9 @@ const ListCart = () => {
 
         {cart.length > 0 && (
           <div className="w-full">
-            <h3 className="text-gray-600 text-lg mb-4">Total: ${total.toFixed(2)}</h3>
+            <h3 className="text-gray-600 text-lg mb-4">
+              Total: ${total.toFixed(2)}
+            </h3>
             <button
               onClick={addWhatsapp}
               className="flex w-full justify-center items-center gap-4  text-xl text-white  bg-green-500  px-6 rounded-2xl py-5 cursor-pointer"
