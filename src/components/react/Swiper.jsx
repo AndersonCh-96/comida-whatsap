@@ -15,7 +15,7 @@ import "./styles.css";
 
 import { useCart } from "../../store/cartProduct";
 import toast from "react-hot-toast";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination,Navigation  } from "swiper/modules";
 import { FaPlus } from "react-icons/fa";
 
 export default function SwiperCarousel({ products, addProduct }) {
@@ -49,9 +49,11 @@ export default function SwiperCarousel({ products, addProduct }) {
   return (
     <div>
       <Swiper
+        navigation={true}
         slidesPerView={1}
         spaceBetween={30}
-        freeMode={true}
+        
+        
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -66,10 +68,10 @@ export default function SwiperCarousel({ products, addProduct }) {
             spaceBetween: 50,
           },
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[FreeMode, Pagination]}
+         pagination={{
+           clickable: true,
+         }}
+        modules={[ Pagination, Navigation]}
         className="mySwiper w-full"
       >
         {products.map((product) => (
