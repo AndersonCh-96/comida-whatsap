@@ -111,7 +111,7 @@ export default function SwiperCarousel({ products, addProduct }) {
           // aria-hidden="true"
           // tabIndex="-1"
           // className="hidden fixed inset-0 z-90 overflow-y-auto  "
-          className=" fixed inset-0 z-90 overflow-y-auto  bg-black/70 flex justify-center"
+          className=" fixed inset-0 z-999 overflow-y-auto  bg-black/70 flex justify-center"
         >
           <div className="relative p-4 w-full max-w-4xl mx-auto my-8 transition-transform justify-center items-center place-content-center">
             <div className="bg-white flex flex-col justify-between rounded-lg shadow p-6  ">
